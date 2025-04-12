@@ -1,0 +1,74 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f2f5;
+  color: #333;
+}
+header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+.lightning-animation {
+  font-size: 2em;
+  animation: flicker 1s infinite;
+}
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+nav {
+  background: #222;
+  padding: 0.5em;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  margin: 0 1em;
+  text-decoration: none;
+}
+.container {
+  padding: 2em;
+}
+.gallery img {
+  width: 100%;
+  max-width: 400px;
+  margin: 1em;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  max-width: 400px;
+}
+form input, form textarea {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 0.75em;
+  cursor: pointer;
+}
+form button:hover {
+  background: #0056b3;
+}
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
